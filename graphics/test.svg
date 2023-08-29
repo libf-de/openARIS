@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="left" viewBox="0 0 423 490">
+        <path id="rect1096" style="fill:#008143;fill-opacity:1;stroke-width:0.999522" d="M 0,0 423,245 V 0 Z M 423,245 0,490 h 423 z" />
+    </symbol>
+    <symbol id="right" viewBox="846 0 423 490">
+        <polygon points="245,456.701 490,33.299 0,33.299 " id="polygon178" transform="matrix(0,-1,0.99905055,0,812.73261,490)" style="fill:#008143;fill-opacity:1" preserveAspectRatio="xMidYMid"/>
+    </symbol>
+
+  </defs>
+
+  <use xlink:href="#left" />
+  <use xlink:href="#right" transform="scale(-1, 1)" x="-100%" y="0" />
+
+<switch>
+    <foreignObject x="0" y="0" width="100%" height="100px">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="margin: 0 100px;">
+        <svg width="100%" height="100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="#topBottom" class="slice" width="100%" height="100" x="0" y="0" style="overflow:visible;" />
+              <rect style="fill:#008143;stroke-width:0.798777" id="rect1363" width="100%" height="490" x="423" y="0" preserveAspectRatio="none" />
+        </svg>
+      </div>
+    </foreignObject>
+  </switch>
+
+</svg>
