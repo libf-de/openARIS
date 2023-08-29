@@ -1,0 +1,2 @@
+- [ ] in MainWindow -> Stammdaten: überprüfe vaClubNumberInput numerisch
+- [ ] in MainWindow -> Stammdaten: überprüfe vaLocZipInput numerisch, 5stellig?
