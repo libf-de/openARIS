@@ -2,7 +2,7 @@
   "header": {
     "comment": "eric project file for project openARIS",
     "copyright": "Copyright (C) 2023 Fabian Schillig, xorgmc@gmail.com",
-    "saved": "2023-08-23, 11:25:20"
+    "saved": "2023-08-23, 11:39:27"
   },
   "project": {
     "AUTHOR": "Fabian Schillig",
@@ -38,7 +38,9 @@
       "README.*": "OTHERS",
       "makefile": "OTHERS"
     },
-    "FORMS": [],
+    "FORMS": [
+      "ui/MainWindow.ui"
+    ],
     "HASH": "6b3ceeeadda123ce194fe07c906d52f816d5d8da",
     "IDLPARAMS": {
       "DefinedNames": [],
@@ -47,7 +49,7 @@
     },
     "LEXERASSOCS": {},
     "LICENSE": "GNU General Public License v3 (GPLv3)",
-    "MAINSCRIPT": "",
+    "MAINSCRIPT": "main.py",
     "MAKEPARAMS": {
       "MakeEnabled": false,
       "MakeExecutable": "",
@@ -73,7 +75,11 @@
     },
     "RESOURCES": [],
     "SOURCES": [
-      "__init__.py"
+      "__init__.py",
+      "main.py",
+      "ui/MainWindow.py",
+      "ui/Ui_MainWindow.py",
+      "ui/__init__.py"
     ],
     "SPELLEXCLUDES": "",
     "SPELLLANGUAGE": "en_US",
