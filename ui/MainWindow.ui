@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>784</width>
-    <height>663</height>
+    <height>706</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,7 +71,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -82,7 +82,7 @@
       <property name="movable">
        <bool>false</bool>
       </property>
-      <widget class="QWidget" name="coreDataTab">
+      <widget class="QWidget" name="a_coreDataTab">
        <attribute name="title">
         <string>Stammdaten</string>
        </attribute>
@@ -1254,7 +1254,7 @@ padding-bottom: 2px;</string>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="b_billingTab">
        <attribute name="title">
         <string>Tab 2</string>
        </attribute>
@@ -1330,7 +1330,7 @@ padding-bottom: 2px;</string>
             </widget>
            </item>
            <item row="3" column="1">
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <layout class="QHBoxLayout" name="vaBillingZipCityGroup">
              <property name="topMargin">
               <number>0</number>
              </property>
@@ -1364,7 +1364,7 @@ padding-bottom: 2px;</string>
             </widget>
            </item>
            <item row="4" column="1">
-            <widget class="QComboBox" name="vaLocCountryInput_2">
+            <widget class="QComboBox" name="vaBillingCountryInput">
              <property name="editable">
               <bool>true</bool>
              </property>
@@ -1635,12 +1635,12 @@ padding-bottom: 2px;</string>
             </widget>
            </item>
            <item row="1" column="1">
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <layout class="QHBoxLayout" name="vaBankIbanBicGroup">
              <property name="topMargin">
               <number>0</number>
              </property>
              <item>
-              <widget class="QLineEdit" name="lineEdit_2">
+              <widget class="QLineEdit" name="vaBankIbanInput">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>40</horstretch>
@@ -1666,14 +1666,14 @@ padding-bottom: 2px;</string>
               </spacer>
              </item>
              <item>
-              <widget class="QLabel" name="vaBillingBicLbl">
+              <widget class="QLabel" name="vaBankBicLbl">
                <property name="text">
                 <string>BIC</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="vaBillingBicInput">
+              <widget class="QLineEdit" name="vaBankBicInput">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>10</horstretch>
@@ -1694,7 +1694,7 @@ padding-bottom: 2px;</string>
             </layout>
            </item>
            <item row="2" column="0" colspan="2">
-            <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <layout class="QHBoxLayout" name="vaBankSeparator">
              <property name="topMargin">
               <number>0</number>
              </property>
@@ -1860,6 +1860,230 @@ padding-bottom: 2px;</string>
            </size>
           </property>
          </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="c_vaTab">
+       <attribute name="title">
+        <string>Veranstaltungsdaten</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QGroupBox" name="vaDetailsGroup">
+          <property name="title">
+           <string>Veranstaltungsdaten</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="vaDetailsNumberLbl">
+             <property name="text">
+              <string>Va-Nummer</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="vaDetailsNumberInput"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="vaAbzeichenGroup">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Abzeichen</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QSplitter" name="vaAbzeichenSplitter">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="handleWidth">
+              <number>6</number>
+             </property>
+             <widget class="QWidget" name="verticalLayoutWidget">
+              <layout class="QVBoxLayout" name="vaAbzeichenListGroup">
+               <item>
+                <widget class="QTableWidget" name="vaAbzeichenTable">
+                 <column>
+                  <property name="text">
+                   <string>Abzeichen</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Startzeitpunkt</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>1. Richter</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>2. Richter</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>3. Richter</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="vaAbzeichenListControlsGroup">
+                 <item>
+                  <widget class="QPushButton" name="vaAbzeichenAddBtn">
+                   <property name="text">
+                    <string>Hinzufügen</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="vaAbzeichenDeleteBtn">
+                   <property name="text">
+                    <string>Entfernen</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="vaAbzeichenListControlsSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="formLayoutWidget">
+              <layout class="QFormLayout" name="vaAbzeichenDetailsGroup">
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>9</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="vaAbzeichenTypeLbl">
+                 <property name="text">
+                  <string>Abzeichen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="vaAbzeichenTypeInput">
+                 <item>
+                  <property name="text">
+                   <string>- weitere -</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="vaAbzeichenStartLbl">
+                 <property name="text">
+                  <string>Startzeitp.</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QDateTimeEdit" name="vaAbzeichenStartInput">
+                 <property name="displayFormat">
+                  <string>dd.MM.yyyy HH:mm</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="vaAbzeichenJudge1Lbl">
+                 <property name="text">
+                  <string>1. Richter</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QComboBox" name="vaAbzeichenJudge1Input">
+                 <item>
+                  <property name="text">
+                   <string>- weitere -</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="vaAbzeichenJudge2Lbl">
+                 <property name="text">
+                  <string>2. Richter</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QComboBox" name="vaAbzeichenJudge2Input">
+                 <item>
+                  <property name="text">
+                   <string>- weitere -</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="vaAbzeichenJudge3Lbl">
+                 <property name="text">
+                  <string>3. Richter</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QComboBox" name="vaAbzeichenJudge3Input">
+                 <item>
+                  <property name="text">
+                   <string>(kein)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>- weitere -</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="Line" name="vaAbzeichenDetailsSeparator">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
